@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City News - My Local News</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top bar, header, nav, and ticker copied from index.html -->
+    <div id="top-bar">
+        <div class="container top-bar-flex">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <h1>My Local News</h1>
+        <p id="current-date"></p>
+    </header>
+    <div class="breaking-news-ticker">
+        <div class="ticker-label">Breaking News</div>
+        <div class="ticker-content">
+            <ul>
+                <li>Breaking News Item 1: This is some major news happening right now!</li>
+                <li>Breaking News Item 2: Another important update for our readers.</li>
+                <li>Breaking News Item 3: Market trends and analysis for today.</li>
+            </ul>
+        </div>
+    </div>
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="City News.html">City News</a></li>
+                <li><a href="State.html">State</a></li>
+                <li><a href="National.html">National</a></li>
+                <li><a href="Sports.html">Sports</a></li>
+                <li><a href="Business.html">Business</a></li>
+                <li><a href="Entertainment.html">Entertainment</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container page-content">
+        <main class="main-column">
+            <h2>City News</h2>
+            <div class="news-list">
+                <p>City news articles will be listed here...</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Advertisements</h3>
+                <div class="ad-placeholder">
+                    <p>300 x 250 Ad</p>
+                </div>
+            </div>
+            <div class="sidebar-widget">
+                <h3>E-Paper Archives</h3>
+                <ul class="archive-list">
+                    <li><a href="#">October 2023</a></li>
+                    <li><a href="#">September 2023</a></li>
+                    <li><a href="#">August 2023</a></li>
+                    <li><a href="#">July 2023</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Galleries</h3>
+                <a href="#" class="gallery-link">
+                    <i class="fas fa-camera"></i> View Photo Gallery
+                </a>
+                <a href="#" class="gallery-link">
+                    <i class="fas fa-video"></i> View Video Gallery
+                </a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Advertisements</h3>
+                <div class="ad-placeholder">
+                    <p>300 x 250 Ad</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> My Local News. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Set the current date
+        const dateElement = document.getElementById('current-date');
+        const today = new Date();
+        dateElement.textContent = today.toLocaleDateString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        // Set the current year for the footer
+        const yearElement = document.getElementById('current-year');
+        yearElement.textContent = today.getFullYear();
+    </script>
+</body>
+</html> 

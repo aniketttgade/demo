@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News Paper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div id="top-bar">
+        <div class="container top-bar-flex">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <h1>My Local News</h1>
+        <p id="current-date"></p>
+    </header>
+
+    <div class="breaking-news-ticker">
+        <div class="ticker-label">Breaking News</div>
+        <div class="ticker-content">
+            <ul>
+                <li>This is breaking news</li>
+                <li>Breaking News Item 2: Another important update for our readers.</li>
+                <li>Breaking News Item 3: Market trends and analysis for today.</li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container nav-flex">
+            <div class="hamburger" id="hamburger-menu" aria-label="Open navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="City News.html">City News</a></li>
+                <li><a href="State.html">State</a></li>
+                <li><a href="National.html">National</a></li>
+                <li><a href="Sports.html">Sports</a></li>
+                <li><a href="Business.html">Business</a></li>
+                <li><a href="Entertainment.html">Entertainment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container page-content">
+        <main class="main-column">
+            <h2>Today's E-Paper</h2>
+            <div class="newspaper-grid">
+                <!-- Page 1 -->
+                <div class="newspaper-page">
+                    <a href="images/page1.png" target="_blank">
+                        <img src="images/page1.png" alt="Newspaper Page 1">
+                    </a>
+                    <div class="page-info">
+                        <a href="images/page1.pdf" target="_blank"><h3>Page 1</h3></a>
+                    </div>
+                </div>
+    
+                <!-- Page 2 -->
+                <div class="newspaper-page">
+                    <a href="images/page2.png" target="_blank">
+                        <img src="images/page2.png" alt="Newspaper Page 2">
+                    </a>
+                    <div class="page-info">
+                        <a href="images/page2.pdf" target="_blank"><h3>Page 2</h3></a>
+                    </div>
+                </div>
+    
+                <!-- Page 3 -->
+                <div class="newspaper-page">
+                    <a href="images/page3.png" target="_blank">
+                        <img src="images/page3.png" alt="Newspaper Page 3">
+                    </a>
+                    <div class="page-info">
+                        <a href="images/page3.pdf" target="_blank"><h3>Page 3</h3></a>
+                    </div>
+                </div>
+    
+                <!-- <div class="newspaper-page">
+                    <a href="images/page4.pdf" target="_blank">
+                        <img src="images/page4.jpg" alt="Newspaper Page 4">
+                        <div class="page-info">
+                            <h3>Page 4</h3>
+                        </div>
+                    </a>
+                </div> -->
+    
+                <!-- Add more pages as needed -->
+    
+            </div>
+        </main>
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Advertisements</h3>
+                <div class="ad-placeholder">
+                    <p>300 x 250 Ad</p>
+                </div>
+            </div>
+            <div class="sidebar-widget">
+                <h3>E-Paper Archives</h3>
+                <ul class="archive-list">
+                    <li><a href="archives.html?date=2025-06-07">June 7, 2025</a></li>
+                    <li><a href="archives.html?date=2025-06-06">June 6, 2025</a></li>
+                    <li><a href="archives.html?date=2025-06-05">June 5, 2025</a></li>
+                    <li><a href="archives.html?date=2025-06-04">June 4, 2025</a></li>
+                </ul>
+                <nav class="archive-pagination">
+                    <a href="#" class="prev">&laquo; Prev</a>
+                    <a href="#" class="page active">1</a>
+                    <a href="#" class="page">2</a>
+                    <a href="#" class="page">3</a>
+                    <a href="#" class="next">Next &raquo;</a>
+                </nav>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Galleries</h3>
+                <a href="#" class="gallery-link">
+                    <i class="fas fa-camera"></i> View Photo Gallery
+                </a>
+                <a href="#" class="gallery-link">
+                    <i class="fas fa-video"></i> View Video Gallery
+                </a>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Contact Us</h3>
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+             <div class="sidebar-widget">
+                <h3>Advertisements</h3>
+                <div class="ad-placeholder">
+                    <p>300 x 250 Ad</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="current-year"></span> My Local News. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+    
+</body>
+</html> 
