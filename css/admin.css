@@ -1,0 +1,94 @@
+.admin-container { 
+    max-width: 700px; 
+    margin: 40px auto; 
+    background: #fff; 
+    border-radius: 16px; 
+    box-shadow: 0 4px 32px rgba(0,0,0,0.07); 
+    padding: 32px; 
+}
+
+.admin-section { 
+    margin-bottom: 36px; 
+}
+
+.admin-section h2 { 
+    color: #ff8800; 
+    margin-bottom: 18px; 
+}
+
+.admin-form label { 
+    font-weight: 600; 
+    display: block; 
+    margin-bottom: 6px; 
+}
+
+.admin-form input[type="file"] { 
+    margin-bottom: 16px; 
+}
+
+.admin-form input[type="text"], 
+.admin-form textarea { 
+    width: 100%; 
+    padding: 8px 10px; 
+    border: 1px solid #e0e7ef; 
+    border-radius: 6px; 
+    margin-bottom: 12px; 
+    font-size: 1rem; 
+}
+
+.admin-form button { 
+    background: #ff8800; 
+    color: #fff; 
+    border: none; 
+    border-radius: 6px; 
+    padding: 8px 24px; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: background 0.2s; 
+}
+
+.admin-form button:hover { 
+    background: #232946; 
+}
+
+.breaking-news-list { 
+    margin: 0 0 16px 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.breaking-news-list li { 
+    background: #f8fafc; 
+    border: 1px solid #e0e7ef; 
+    border-radius: 6px; 
+    padding: 10px 14px; 
+    margin-bottom: 8px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.breaking-news-list button { 
+    background: #ff8800; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 4px 10px; 
+    font-size: 0.95rem; 
+    cursor: pointer; 
+    margin-left: 10px; 
+}
+
+.breaking-news-list button:hover { 
+    background: #232946; 
+}
+
+.admin-note { 
+    background: #fffbe6; 
+    border: 1px solid #ffe58f; 
+    color: #ad8b00; 
+    border-radius: 8px; 
+    padding: 16px; 
+    margin-bottom: 32px; 
+} 
